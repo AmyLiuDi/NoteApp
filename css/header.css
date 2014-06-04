@@ -1,0 +1,40 @@
+/* @header导航样式
+-----------------------------------------------*/
+nav#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 3em;
+	width: 100%;
+	background: #ddd;
+	z-index: 20;
+	box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+#header ul {
+	position: relative;
+	height: inherit;
+	width: 18.4em;
+	margin: auto;
+}
+
+#header li {
+	float: left;
+	height: inherit;
+}
+
+#header a {
+	display: block;
+	text-align: center;
+	height: inherit;
+	width: 6em;
+	font-size: 1.5em;
+	line-height: 2em;
+	margin-left: 0.1em;
+	text-shadow: 1px 1px 1px #444;
+}
+
+#header a:active ,#header a:focus ,#header a:hover ,#header a.selected{
+	background: #fff;
+}

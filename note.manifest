@@ -1,0 +1,22 @@
+CACHE MANIFEST
+
+#version 2014-5-27 
+
+CACHE:
+css/reset.css
+css/global.css
+css/header.css
+css/footer.css
+css/index.css
+css/groups.css
+css/import.css
+js/jquery-1.11.1.min.js
+js/index.js
+image/image.ico
+image/music.ico
+image/video.ico
+
+NETWORK:
+*
+
+FALLBACK:

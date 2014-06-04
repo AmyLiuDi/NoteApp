@@ -1,0 +1,11 @@
+/* @全局样式
+-----------------------------------------------*/
+body {
+	font-family: "微软雅黑";
+	color: #333;
+	word-wrap: break-word;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+	color: #333;
+}

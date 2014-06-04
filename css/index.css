@@ -1,0 +1,62 @@
+/* @section主体样式
+-----------------------------------------------*/
+#index-section {
+	clear: both;
+	margin: 4em 10%;
+	min-height: 490px;
+}
+
+#index-section ul {
+	position: relative;
+	margin: 2em 0;
+	width: 100%;
+}
+
+#index-section li {
+	float: left;
+	width: 29%;
+	margin: 2em 2.16%;	
+}
+
+#index-section li a {
+	word-wrap: break-word;
+	display: block;
+	font-size: 24px;
+	line-height: 1.3em;
+	height: 6.5em;
+	padding: 0.75em;
+	background: #bbb;
+	box-shadow: 4px 4px 4px #888;
+	overflow: hidden;
+}
+#index-section li a p {
+	font-size: 24px;
+	overflow: hidden;
+	max-height: 4em;
+}
+
+#index-section span.time {
+	font-size: 14px;
+	color: #777;
+	margin: 0 5px;
+	line-height: 20px;
+}
+
+#index-section a.add {
+	font-size: 4em;
+	padding: 1em 0 0 0;
+	height: 2em;
+	text-align: center;
+}
+
+img {
+	width: 650px;
+}
+
+audio {
+	width:600px; 
+}
+
+video {
+	width: 640px;
+}

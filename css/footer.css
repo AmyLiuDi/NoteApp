@@ -1,0 +1,17 @@
+/* @footer脚注样式
+-----------------------------------------------*/
+footer {
+	background: #ddd;
+	clear: both;
+	text-align: center;
+	line-height: 1em;
+	z-index: 20;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+footer a#name ,a#name:visited {
+	color: #000;
+}

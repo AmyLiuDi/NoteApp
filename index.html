@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en" manifest="note.manifest">
+<head>
+	<meta charset="UTF-8">
+	<title>我的记事--主页</title>
+	<!–[if lt IE]> 
+		<script> 
+		   (function() {
+		     if (! 
+		     /*@cc_on!@*/
+		     0) return;
+		     var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+		     var i= e.length;
+		     while (i--){
+		         document.createElement(e[i]);
+		     } 
+			})() 
+		</script>
+	<![endif]–>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/groups.css">
+	<link rel="stylesheet" href="css/import.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<nav id="header">
+		<ul>
+			<li><a id="nav-index" class="selected" href="javascript:;">主页</a></li>
+			<li><a id="nav-groups" href="javascript:;">分组</a></li>
+		</ul>
+	</nav>
+
+	<!-- 主页 -->
+	<section id="index-section">
+		<ul>
+			<li>
+				<a href="javascript:;" class="add">新建</a>
+			</li>
+			<li style="display:none">
+				<a href="javascript:;">
+					<span class="time"></span>
+					<p></p>
+					<p>......</p>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<!-- 分组 -->
+	<section id="groups-section" style="display: none">
+		<div id="navigation">
+
+			<header>
+				<span>分组</span>
+				<ul id="groups">
+					<li>
+						<a class="selected" href="javascript:;" name="all" data-nav="all">全部</a>
+					</li>
+					<li>
+						<a href="javascript:;" name="temp" data-nav="temp">临时</a>
+					</li>
+					<li>
+						<a href="javascript:;" name="life" data-nav="life">生活</a>
+					</li>
+					<li>
+						<a href="javascript:;" name="job" data-nav="job">工作</a>
+					</li>
+				</ul>
+			</header>
+
+			<div id="list">
+				<ul>
+					<li style="display: none">
+						<a href="javascript:;">
+							<p class="ellipsis"></p>
+							<p class="info">
+								<span class="time"></span>
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<article class="note note1" style="display: none">
+			<header>
+				<span class="time">2014-5-22 17:56:21</span>
+				<ul>
+					<li><a href="javascript:;" class="new gm-new">新建记事</a></li>
+					<li><a href="javascript:;" class="save gm-save">保存</a></li>
+					<li><a href="javascript:;" class="cancel gm-cancel">取消</a></li>
+					<li><a href="javascript:;" class="delete gm-delete">删除</a></li>
+				</ul>
+			</header>
+			<div>
+				<div>
+					<ul class="import">
+						<li><span style="text-align: center; line-height: 30px;">附件：</span></li>
+						<li><a href="javascript:;" name="image" class="image"></a></li>
+						<li><a href="javascript:;" name="music" class="music"></a></li>
+						<li><a href="javascript:;" name="video" class="video"></a></li>
+						<li>
+							<span>分类：</span>
+							<select name="selected" class="tag">
+								<option value="temp">临时</option>
+								<option value="life">生活</option>
+								<option value="job">工作</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<form >
+					<div class="text vText2" contenteditable="true">
+					 <p><br></p>
+					</div>
+				</form>
+			</div>
+		</article>
+
+		<!-- 分组备用article -->
+		<article class="note note2" style="display: none">
+		<header>
+			<span class="time"></span>
+			<ul>
+				<li><a href="javascript:;" class="save gb-save">保存</a></li>
+				<li><a href="javascript:;" class="cancel gb-cancel">取消</a></li>
+			</ul>
+		</header>
+		<div>
+			<div>
+				<ul class="import">
+					<li><span style="text-align: center; line-height: 30px;">附件：</span></li>
+					<li><a href="javascript:;" name="image" class="image"></a></li>
+					<li><a href="javascript:;" name="music" class="music"></a></li>
+					<li><a href="javascript:;" name="music" class="video"></a></li>
+					<li>
+						<span>分类：</span>
+						<select name="selected" class="tag">
+							<option value="temp">临时</option>
+							<option value="life">生活</option>
+							<option value="job">工作</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<form >
+				<div class="text nText2" contenteditable="true">
+					<p><br></p>
+				</div>
+			</form>
+		</div>
+	</article>
+	</section>
+
+	<!-- 主页记事全文 -->
+	<article class="note note4" style="left: 277px; display: none">
+		<header>
+			<span class="time"></span>
+			<ul>
+				<li><a href="javascript:;" class="save i-save">保存</a></li>
+				<li><a href="javascript:;" class="cancel i-cancel">取消</a></li>
+				<li><a href="javascript:;" class="cancel i-delete">删除</a></li>
+			</ul>
+		</header>
+		<div>
+			<div>
+				<ul class="import">
+					<li><span style="text-align: center; line-height: 30px;">附件：</span></li>
+					<li><a href="javascript:;" name="image" class="image"></a></li>
+					<li><a href="javascript:;" name="music" class="music"></a></li>
+					<li><a href="javascript:;" name="music" class="video"></a></li>
+					<li>
+						<span>分类：</span>
+						<select name="selected" class="tag">
+							<option value="temp">临时</option>
+							<option value="life">生活</option>
+							<option value="job">工作</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<form >
+				<div class="text vText1" contenteditable="true">
+					<p><br></p>
+				</div>
+			</form>
+		</div>
+	</article>
+
+	<!-- 主页新建 -->
+	<article class="note note3" style="left: 277px; display: none">
+		<header>
+			<span class="time"></span>
+			<ul>
+				<li><a href="javascript:;" class="save in-save">保存</a></li>
+				<li><a href="javascript:;" class="cancel in-cancel">取消</a></li>
+			</ul>
+		</header>
+		<div>
+			<div>
+				<ul class="import">
+					<li><span style="text-align: center; line-height: 30px;">附件：</span></li>
+					<li><a href="javascript:;" name="image" class="image"></a></li>
+					<li><a href="javascript:;" name="music" class="music"></a></li>
+					<li><a href="javascript:;" name="music" class="video"></a></li>
+					<li>
+						<span>分类：</span>
+						<select name="selected" class="tag">
+							<option value="temp">临时</option>
+							<option value="life">生活</option>
+							<option value="job">工作</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<form >
+				<div class="text nText1" contenteditable="true">
+					<p><br></p>
+				</div>
+			</form>
+		</div>
+	</article>
+
+	<!-- 附件 -->
+	<div id="div-import">
+		<div id="ip-header"><p>文件上传</p></div>
+		<a href="avascript:;" id="a-file">
+			<label for="upload-file">选择文件</label>
+			<input type="file" id="upload-file">
+		</a>
+		<ul>
+			<li><a href="javascript:;" id="up-no">取消</a></li>
+		</ul>
+	</div>
+
+	<footer>
+		<p>© 2014 <a id="name" target="_blank" href="https://github.com/coolxuefeng">周雪锋</a> —— All Rights Reserved</p>
+	</footer>
+</body>
+</html>

@@ -9,3 +9,6 @@ body {
 a, a:hover, a:focus, a:active, a:visited {
 	color: #333;
 }
+
+/*html5*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block;}
